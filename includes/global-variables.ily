@@ -1,4 +1,4 @@
-\version "2.22.2"
+\version "2.24.0"
 
 % Redefine
 
@@ -86,6 +86,7 @@ increaseSpacingA = \tweak extra-spacing-width #'(0 . 1.5) \etc
 movePedalA = \tweak Y-offset 5.5 \etc
 moveGraceA = \once \override NoteColumn.X-offset = 1.5 
 moveGraceB = \once \override NoteColumn.X-offset = 1
+spaceForAccidental = \markup \hspace #2.5
 
 slurShapeA = \shape #'(
                         ()

@@ -1,6 +1,6 @@
 %...+....1....+....2....+....3....+....4....+....5....+....6....+....7....+....
 
-\version "2.22.2"
+\version "2.24.0"
 \language "english"
 
 \include "global-variables.ily"
@@ -21,7 +21,7 @@ rightHandUpper = \relative {
   bf4.) r16 c'( bf f af gf |
   f4 ef8~ ef f gf) |
   \slashedGrace { gf8 } gf'4.( \strictGraceOn 
-    \grace { ef8[ df s16 bff8 gf ef] } \strictGraceOff 
+    \grace { ef8[ df-\spaceForAccidental bff8 gf ef] } \strictGraceOff 
     c16)-.-\slurShapeG ( df-. d-. ef-. f-. gf-. |
     
   \barNumberCheck 9
@@ -796,5 +796,3 @@ nocturneTwoMidi = \book {
     }
   }
 }
-
-#(ly:expect-warning "forced break was overridden")
