@@ -710,71 +710,66 @@ forceBreaks = {
   %{ 71 %} s2.\noBreak s2.\noBreak s2.\noPageBreak\break
 }
 
-nocturneTwoHeader = \header { 
-  opus = "Opus 27, No 2"
-  copyright = \markup { 
-    "This work is licensed under a" 
-    \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" 
-    "Creative Commons Attribution-ShareAlike 4.0 License" 
+nocturneTwoMusic = \score {
+  \header {
+    opus = "Opus 27, No 2"
   }
-}
-
-nocturneTwoLayout = \layout {
-  \context {
-    \Score
-    \remove System_start_delimiter_engraver
-    \omit BarNumber
-    \override Slur.details.free-head-distance = #0.75
-  }
-  \context {
-    \PianoStaff
-    \name InnerPianoStaff
-  }
-  \context {
-    \PianoStaff
-    \accepts InnerPianoStaff
-    systemStartDelimiter = #'SystemStartBar
-  }
-}
-
-nocturneTwoMusic = <<
-  \new Staff = "ossiaUpper" \with {
-    \remove "Time_signature_engraver"
-    \hide Clef
-    \override BarLine.allow-span-bar = ##f
-    \override KeySignature.stencil = ##f
-    \magnifyStaff #2/3
-    \override VerticalAxisGroup.staff-staff-spacing = 
-      #'((basic-distance . 0) 
-        (minimum-distance . 0)
-        (padding . 1)
-        (stretchability . 0))
-  } {
-    \ossiaUpper
-  }  
-  \new PianoStaff \new InnerPianoStaff
-      \with { instrumentName = \markup \huge "No. 8" } <<
-    \new Staff = "upper" \rightHand
-    \new Dynamics = "dynamics" \dynamics
-    \new Staff = "lower" \leftHand
-    \new Dynamics = "pedal" \pedal
-    \new Devnull \forceBreaks
+  \keepWithTag layout
+  <<
+    \new Staff = "ossiaUpper" \with {
+      \remove "Time_signature_engraver"
+      \hide Clef
+      \override BarLine.allow-span-bar = ##f
+      \override KeySignature.stencil = ##f
+      \magnifyStaff #2/3
+      \override VerticalAxisGroup.staff-staff-spacing = 
+        #'((basic-distance . 0) 
+          (minimum-distance . 0)
+          (padding . 1)
+          (stretchability . 0))
+    } {
+      \ossiaUpper
+    }
+    \new PianoStaff \new InnerPianoStaff \with { 
+      instrumentName = \markup \huge "No. 8" 
+    } <<
+      \new Staff = "upper" \rightHand
+      \new Dynamics = "dynamics" \dynamics
+      \new Staff = "lower" \leftHand
+      \new Dynamics = "pedal" \pedal
+      \new Devnull \forceBreaks
+    >>
+    \new Staff = "ossiaLower" \with {
+      \remove "Time_signature_engraver"
+      \hide Clef
+      \override BarLine.allow-span-bar = ##f
+      \override KeySignature.stencil = ##f
+      \magnifyStaff #2/3
+      \override VerticalAxisGroup.staff-staff-spacing = 
+        #'((basic-distance . 0) 
+          (minimum-distance . 0)
+          (padding . 1)
+          (stretchability . 0))
+    } {
+      \ossiaLower
+    }
   >>
-  \new Staff = "ossiaLower" \with {
-    \remove "Time_signature_engraver"
-    \hide Clef
-    \override BarLine.allow-span-bar = ##f
-    \override KeySignature.stencil = ##f
-    \magnifyStaff #2/3
-    \override VerticalAxisGroup.staff-staff-spacing = 
-      #'((basic-distance . 0) 
-        (minimum-distance . 0)
-        (padding . 1)
-        (stretchability . 0))
-  } {
-    \ossiaLower
+  \layout {
+    \context {
+      \Score
+      \remove System_start_delimiter_engraver
+    }
+    \context {
+      \PianoStaff
+      \name InnerPianoStaff
+    }
+    \context {
+      \PianoStaff
+      \accepts InnerPianoStaff
+      systemStartDelimiter = #'SystemStartBar
+    }
   }
->>
+}
 
 nocturneTwoMidi = \book {
   \bookOutputName "nocturne-op27-no2"
@@ -784,15 +779,6 @@ nocturneTwoMidi = \book {
       \new Staff = "upper" << \rightHand \dynamics \pedal >>
       \new Staff = "lower" << \leftHand \dynamics \pedal >>
     >>
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }    
-    }
+    \midi {}
   }
 }

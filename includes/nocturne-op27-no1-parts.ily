@@ -760,34 +760,23 @@ forceBreaks = {
   %{ 96 %} s1\noBreak s1\noBreak s1\noPageBreak\break
 }
 
-nocturneOneHeader = \header { 
-  title = "Nocturnes"
-  composer = "Frédéric Chopin (1810-1849)"
-  opus = "Opus 27, No 1"
-  copyright = \markup { 
-    "This work is licensed under a" 
-    \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" 
-    "Creative Commons Attribution-ShareAlike 4.0 License" 
+nocturneOneMusic = \score {
+  \header {
+    title = "Nocturnes"
+    composer = "Frédéric Chopin (1810-1849)"
+    opus = "Opus 27, No 1"
   }
-}
-
-nocturneOneLayout = \layout {
-  \context {
-    \Score
-    \omit BarNumber
-    \override Slur.details.free-head-distance = #0.75
-  }
-}
-
-nocturneOneMusic = <<
-  \new PianoStaff \with { instrumentName = \markup \huge "No. 7" } <<
+  \keepWithTag layout
+  \new PianoStaff \with { 
+    instrumentName = \markup \huge "No. 7" 
+  } <<
     \new Staff = "upper" \rightHand
     \new Dynamics = "dynamics" \dynamics
     \new Staff = "lower" \leftHand
     \new Dynamics = "pedal" \pedal
     \new Devnull \forceBreaks
   >>
->>
+}
 
 nocturneOneMidi = \book {
   \bookOutputName "nocturne-op27-no1"
@@ -797,15 +786,6 @@ nocturneOneMidi = \book {
       \new Staff = "upper" << \rightHand \dynamics \pedal >>
       \new Staff = "lower" << \leftHand \dynamics \pedal >>
     >>
-    \midi {
-      \context {
-        \Staff
-        \consists "Dynamic_performer"
-      }
-      \context {
-        \Voice
-        \remove "Dynamic_performer"
-      }    
-    }
+  \midi {}
   }
 }
