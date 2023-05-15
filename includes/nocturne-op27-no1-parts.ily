@@ -762,8 +762,6 @@ forceBreaks = {
 
 nocturneOneMusic = \score {
   \header {
-    title = "Nocturnes"
-    composer = "Frédéric Chopin (1810-1849)"
     opus = "Opus 27, No 1"
   }
   \keepWithTag layout

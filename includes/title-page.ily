@@ -16,7 +16,7 @@ titlePage = \bookpart {
     \null \null \null \null
     \null \null \null \null
     \null \null
-    \line { \abs-fontsize #36 \bold "2 Nocturnes" }
+    \line { \abs-fontsize #36 \bold "Two Nocturnes" }
     \null \null \null
     \line { \abs-fontsize #20 "Opus 27" }
     \null \null \null \null

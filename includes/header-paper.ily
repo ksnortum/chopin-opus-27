@@ -7,7 +7,7 @@
   maintainerEmail = "knute (at) snortum (dot) net"
   source = "https://imslp.eu/files/imglnks/euimg/9/9f/IMSLP705999-PMLP02305-E705554_42-53-Chopin--nocturnes--Ekier-pd.pdf" 
   copyright = \markup { 
-    "This work is licensed under a" 
+    "© 2023 Knute Snortum. This work is licensed under a" 
     \with-url #"https://creativecommons.org/licenses/by-sa/4.0/" 
     "Creative Commons Attribution-ShareAlike 4.0 License" 
   }
