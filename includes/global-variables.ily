@@ -104,6 +104,7 @@ moveRightB = \once \override NoteColumn.X-offset = 0.25
 moveRightC = \once \override NoteColumn.X-offset = 0.25
 moveRightD = \once \override NoteColumn.X-offset = 0.5
 moveRightE = \once \override NoteColumn.X-offset = 0.5
+moveRightF = \once \override NoteColumn.X-offset = 0.5
 
 slurShapeA = \shape #'(
                         ()

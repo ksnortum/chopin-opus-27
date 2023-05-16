@@ -135,7 +135,7 @@ rightHandUpper = \relative {
   \barNumberCheck 57
   <f af>8[ <ef gf>)] <bf' gf'>-!~([ q16^\conForza <af f'>-.] 
     \scaleDurations 2/3 { <gf ef'>-.[ <f df'>-. <ef c'>-.] <df bf'>-.[ 
-                          <c af'>-. <bf gf'>-.)] } |
+                          <c af'>-. \moveRightF <bf gf'>-.)] } |
   <af f'>8(^\appass <bf gf'> <af f'> <gf ef'> <f df'> <df f>) |
   <df af'>4.^( <df ef bf'>-> |
   <af df ef>4.*1/2)^~( \magnifyMusic #2/3 { \scaleDurations 3/18 { ef'8 af df 
