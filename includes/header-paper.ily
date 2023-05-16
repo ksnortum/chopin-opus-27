@@ -51,7 +51,7 @@
 \layout {
   \context {
     \Score
-    \omit BarNumber
+    % \omit BarNumber % restore after editing
     \override Slur.details.free-head-distance = #0.75
   }
 }

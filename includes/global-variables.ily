@@ -26,6 +26,14 @@ strictGraceOff = {
 
 omitOneAccidental = \once \omit Accidental
 
+
+accidentalAbovePrall = {
+  \set suggestAccidentals = ##t
+  \once \override AccidentalSuggestion.avoid-slur = #'outside
+  \once \override AccidentalSuggestion.parenthesized = ##t
+}
+accidentalAbovePrallOff = \unset suggestAccidentals
+
 % Positions and shapes
 
 moveFzA = 
@@ -47,6 +55,10 @@ moveFzD =
 moveFzE = 
   \tweak X-offset -3
   \tweak Y-offset -4
+  \etc
+moveFzF = 
+  \tweak X-offset -3
+  \tweak Y-offset -5
   \etc
 moveOssiaA = 
   \tweak X-offset -6
@@ -87,12 +99,17 @@ movePedalA = \tweak Y-offset 5.5 \etc
 moveGraceA = \once \override NoteColumn.X-offset = 1.5 
 moveGraceB = \once \override NoteColumn.X-offset = 1
 spaceForAccidental = \markup \hspace #2.5
+moveRightA = \once \override NoteColumn.X-offset = 0.5
+moveRightB = \once \override NoteColumn.X-offset = 0.25
+moveRightC = \once \override NoteColumn.X-offset = 0.25
+moveRightD = \once \override NoteColumn.X-offset = 0.5
+moveRightE = \once \override NoteColumn.X-offset = 0.5
 
 slurShapeA = \shape #'(
                         ()
                         ((0 . 1) (0 . 0.5) (0 . 0) (0 . 0))
                       ) \etc
-slurShapeB = \shape #'((0 . -0.5) (0 . 0.25) (0 . 0) (0 . 0)) \etc
+slurShapeB = \shape #'((0.25 . -0.25) (0 . 0.25) (0 . 0) (0 . 0)) \etc
 slurShapeC = \shape #'((0.5 . -0.5) (0 . 0.25) (0 . 0) (0 . 0)) \etc
 slurShapeD = \shape #'((0 . -3) (0 . 0) (0 . 0) (0 . 0)) \etc
 slurShapeE = \shape #'((8 . -1) (7 . -1.5) (1 . -1) (0 . 0)) \etc
@@ -139,6 +156,10 @@ slurShapeCC = \shape #'((0 . 1) (0 . 1) (0 . 2) (0 . 3)) \etc
 slurShapeDD = \shape #'((0.5 . -1) (0 . -1) (0 . -0.5) (0 . -2.5)) Slur
 slurShapeEE = \shape #'((0 . 1.5) (0 . 1) (0 . 2) (0 . 3)) \etc
 slurShapeFF = \shape #'((0.5 . -1) (0 . -1) (0 . -0.5) (0 . -2)) Slur
+slurShapeGG = \shape #'((0 . 0) (0 . 0.25) (0 . 0.25) (0 . 0)) \etc
+slurShapeHH = \shape #'((0 . 0) (0 . 0.25) (0 . 0.25) (0 . 0)) \etc
+slurShapeII = \shape #'((0 . -2) (0 . -1) (0 . 0) (0 . 0)) \etc
+
 tieShapeA = \shape #'((5 . -0.5) (5 . -0.5) (0 . -0.5) (0 . -0.5)) \etc
 tieShapeB = \shape #'((0 . 0) (0 . 1.5) (0 . 1.5) (0 . 0)) \etc
 
@@ -156,6 +177,7 @@ conForza = \markup \large \italic "con forza"
 conDuolo = \markup \large \italic "con duolo"
 calando = \markup \large \italic "calando"
 rallentando = \markup \large \italic "rallentando"
+legato = \markup \large \italic "legato"
 pLegato = \markup { \dynamic p \large \italic "legato" }
 fermataOverBar = \mark \markup { \musicglyph #"scripts.ufermata" }
 dolce = \markup \large \italic "dolce"

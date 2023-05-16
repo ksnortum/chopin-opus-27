@@ -34,21 +34,21 @@ rightHandUpper = \relative {
     <c_~ ef>32)] \grace { f8 } \tuplet 3/2 { <c ef>16( <bf df> 
     <c ef>) } <df f>16-.[ r32 <a c>]( |
   <c ef>8->[ <bf df>16)] r \voiceOne bf'8->~[ bf16 cf] 
-    \scaleDurations 2/3 { bf16([ bff bf)] } f'16-^[ r32 bf,] |
+    \scaleDurations 2/3 { bf16([ bff bf)] } f'16-![ r32 bf,] |
   \oneVoice
   <gf bf>8( <af cf> <ef gf>) \tuplet 6/4 { <gf bf>16([ <f af> <gf bf> 
-    <f af> <ef gf> <f af>) } <gf bf>-^ r32 <d f>]( |
+    <f af> <ef gf> <f af>) } <gf bf>-! r32 <d f>]( |
   <f af>8->[ <ef gf>16)] r32 <gf ef'> 
     \tuplet 3/2 { <gf ef'>16([ <f df'> <ef cf'>] }
-    \scaleDurations 2/3 { <d bf'>16-^)[ <bf bf'>16-.( <b bf'>-.]
+    \scaleDurations 2/3 { <d bf'>16-!)[ <bf bf'>16-.( <b bf'>-.]
     <c bf'>-.[ <cs bf'>-. <d bf'>-.] <ef bf'>-. <e bf'>-. <f bf>-.) } |
   \tuplet 5/4 { <gf bf>16( <af cf> <gf bf> <f af> <gf bf>) } 
-    <af cf>16-^[ r32 <ef gf>]( \tag layout { \slashedGrace { <ef gf>8 } }
-    <gf bf>16-^)[ r32 <f af>]( \tuplet 3/2 8 { q16[\prall 
-    <ef gf>) r32 <f af>]( q16[ <gf bf>-^) r32 <d f>]( } |
+    <af cf>16-![ r32 <ef gf>]( \tag layout { \slashedGrace { <ef gf>8 } }
+    <gf bf>16-!)[ r32 <f af>]( \tuplet 3/2 8 { q16[\prall 
+    <ef gf>) r32 <f af>]( q16[ <gf bf>-!) r32 <d f>]( } |
     
   \barNumberCheck 17
-  \tag layout { \slashedGrace { <d f>8 } } <f af>8-^) r <ef gf>->~( q <d gf>-.
+  \tag layout { \slashedGrace { <d f>8 } } <f af>8-!) r <ef gf>->~( q <d gf>-.
     <df gf>-. |
   <c gf'>8.) <bff bff'>16->(^\conForza <af af'>8~ q <gf gf'> <df df'> |
   <c c'>4) af'8( \scaleDurations 2/3 { bff16 cf bff } af16[ bff ff'16. ef32] |
@@ -56,7 +56,7 @@ rightHandUpper = \relative {
   <af af'>8)[ <af af'>32( <gf gf'> <af af'> <gf gf'>] <ff ff'> <ef ef'>
     <ff ff'> <ef ef'>) |
   <c c'>8 r r16 af'( \scaleDurations 2/3 { bff16 cf bff } af16[ bf
-    \slashedGrace { \moveGraceB bf8 } ff'16-^) r32 ef]( |
+    \slashedGrace { \moveGraceB bf8 } ff'16-!) r32 ef]( |
   ef4-.) r8 ef4.->~( |
   ef4. d4. |
   cs4) r8 df4.->~ |
@@ -77,34 +77,34 @@ rightHandUpper = \relative {
     df') bf,(] f'[ d') b,(] gf'[ ef') c,(] }
     
   \barNumberCheck 33
-  <g' e'>8.) <af f'>16 \tuplet 3/2 { <af f'>16([ <bf gf'>-^) r32 <af f'>] }
+  <g' e'>8.) <af f'>16 \tuplet 3/2 { <af f'>16([ <bf gf'>-!) r32 <af f'>] }
     \tag layout { \acciaccatura { <af f'>8 } } <f df'>4.->( |
   <e cs'>8 <fs d'>) <cs a'>( <e cs'>16[ <d b'>\prall <cs as'> <d b'> 
-    <e cs'>32-^) r <b gs'>16(] |
-  <d b'>8-^)[ r16 <cs a'>] \tuplet 3/2 { <cs a'>-.( <cs gs'>-. <cs fs>-.) }
+    <e cs'>32-!) r <b gs'>16(] |
+  <d b'>8-!)[ r16 <cs a'>] \tuplet 3/2 { <cs a'>-.( <cs gs'>-. <cs fs>-.) }
     <d e>8. <as e'>16-.( <b e>-. <bs e>-.) |
   <cs e>4( <d fs>16)[ <a cs>] \acciaccatura { <gs cs>8 } <cs e>16.[ <b d>32](
-    \scaleDurations 2/3 { <b d>16[\prall <as cs> <b d>] q[ <cs e>-^) r32 
+    \scaleDurations 2/3 { <b d>16[\prall <as cs> <b d>] q[ <cs e>-!) r32 
                           <gs b>(]  } |
   <b d>8[ <a cs>)] <cs a'>->~( q q q) |
   \voiceOne
-  gs'8 a8. gs16 fs8~([ \scaleDurations 2/3 { fs16 e fs] } gs16-^) 
+  gs'8 a8. gs16 fs8~([ \scaleDurations 2/3 { fs16 e fs] } gs16-!) 
     \oneVoice r32 <bs, ds>( |
-  <ds fs>8->~[ \scaleDurations 2/3 { <ds fs>16 <cs e>-^) r32 <e cs'>](
-    q16->[ <gs b>) r32 <fs a>]( <e gs>16-^)[ <gs, gs'>-.( <a gs'>-.]
+  <ds fs>8->~[ \scaleDurations 2/3 { <ds fs>16 <cs e>-!) r32 <e cs'>](
+    q16->[ <gs b>) r32 <fs a>]( <e gs>16-!)[ <gs, gs'>-.( <a gs'>-.]
     <as gs'>-.[ <b gs'>-. <bs gs'>-.] } \scaleDurations 4/5 { <cs gs'>32-.[
     <css gs'>-. <ds gs>-. <e gs>-. <es gs>-.)] } |
-  <fs gs>8 \slashedGrace { b8 } <fs a>( <fs gs> <fs ds'>16-^) r <e gs>8-.( 
+  <fs gs>8 \slashedGrace { b8 } <fs a>( <fs gs> <fs ds'>16-!) r <e gs>8-.( 
     <ds gs>-.) |
     
   \barNumberCheck 41
   \voiceOne gs4^\> fs8\! \oneVoice r <c ef gf>-.( <cf ef gf>-.) |
   <bf ef gf>8-. \slashedGrace { gf'8 } gf'4~-\slurShapeL( gf16[ d] 
     \scaleDurations 2/3 { ef16[ a, bf] f[ gf d]) } |
-  <bff ef gf>8-^ \slashedGrace { gf'8 } gf'4~-\slurShapeM( gf16[ d] 
+  <bff ef gf>8-! \slashedGrace { gf'8 } gf'4~-\slurShapeM( gf16[ d] 
     \scaleDurations 2/3 { ef16[ af, bff] f[ gf d]) } |
-  <a ef' gf>8-^ \slashedGrace { gf'8 } gf'4 <a,, cs fs>8-^\noBeam
-    \slashedGrace { fs'8 } fs'8\noBeam <a,, c fs>-^ |
+  <a ef' gf>8-! \slashedGrace { gf'8 } gf'4 <a,, cs fs>8-!\noBeam
+    \slashedGrace { fs'8 } fs'8\noBeam <a,, c fs>-! |
   \slashedGrace { fs'8 } fs'~-\slurShapeQ([ \scaleDurations 2/3 { gf16 f e] 
     gf,[ ef' d] df[ ef, c'] bf[ a c,] af'[ g gf] } |
   f4. ef8 df8. f,16 |
@@ -124,16 +124,16 @@ rightHandUpper = \relative {
   bf8.->[ a32 bf] cf bf \tuplet 3/2 { df32 cf bf } bf4) bf'8->~ |
   <gf bf>8 <af cf>( <ef gf>) \slashedGrace { <ef gf>8 } <gf bf>16[ r32 
     <f af>] \scaleDurations 2/3 { <f af>16\prall( <ef gf> <f af> } 
-    <gf bf>16-^)[ r32 <d f>] |
+    <gf bf>16-!)[ r32 <d f>] |
   <f af>8( <ef gf>16) r32 <gf ef'> \scaleDurations 2/3 { <gf ef'>16([
     <f df'> <ef cf'>-.)] <d bf'>-.([ <bf bf'>-. <b bf'>-.] 
     <c bf'>-.[ <cs bf'>-. <d bf'>-.] <ef bf'>-. <e bf'>-. <f bf>-.) } |
   <gf bf>8(-2-4 <af cf>8.-> <ef gf>16) \tag layout { \slashedGrace { <ef gf>8 }
     } <gf bf>16[( r32 <f af>] \scaleDurations 2/3 { <f af>16->\prall <ef gf> 
-    <f af> } <gf bf>16-^)[ r32 <d f>]( |
+    <f af> } <gf bf>16-!)[ r32 <d f>]( |
     
   \barNumberCheck 57
-  <f af>8[ <ef gf>)] <bf' gf'>-^~([ q16^\conForza <af f'>-.] 
+  <f af>8[ <ef gf>)] <bf' gf'>-!~([ q16^\conForza <af f'>-.] 
     \scaleDurations 2/3 { <gf ef'>-.[ <f df'>-. <ef c'>-.] <df bf'>-.[ 
                           <c af'>-. <bf gf'>-.)] } |
   <af f'>8(^\appass <bf gf'> <af f'> <gf ef'> <f df'> <df f>) |
@@ -350,14 +350,15 @@ leftHandLower = \relative {
   af,16(-\moveFzE\fz df'' ef, df' af ef)  af,( df' ef, df' af ef) |
   af,,16( df'' ef, df' gf, ef)  af,( c' ef, c' gf af,) |
   df,16( f'' af, f' df f,)  df( ff' bf, ff' df g,) |
-  df16( ef' a, ef' c gf)  df-\slurShapeR ( d' af d cf f,) |
-  df16-\slurShapeS( df' g, df' bf e,)  df-\slurShapeT( df' gf, df' bff ef,) |
+  df16( ef' a, ef' c gf)  df-\slurShapeR ( \moveRightB d' af d cf f,) |
+  df16-\slurShapeS ( \moveRightC df' g, df' bf e,)  df-\slurShapeT ( 
+    df' gf, df' bff ef,) |
   
   \barNumberCheck 65
   df16-\slurShapeV( c' gf c af ef)  df-\slurShapeV( c' gf c af ef) |
   df,16-\slurShapeF ( f'' af, f' df f,  df ff' bf, ff' df g, |
-  df16 ef' a, ef' c gf  df d' af d cf f, |
-  df16 df' g, df' bf e,  df df' gf, df' bff ef, |
+  df16 ef' a, ef' c gf  df \moveRightD d' af d cf f, |
+  df16 \moveRightE df' g, df' bf e,  df df' gf, df' bff ef, |
   df16 c' gf c af ef  df c' gf c af ef) |
   df,16 df'' df, df' f, af,  df,^\calando df'' df, df' f, af, |
   df,16 c'' ef, c' gf af,  df, c'' ef, c' gf af, |
@@ -688,7 +689,7 @@ forceBreaks = {
   
   %{ 26 %} s2.\noBreak s2.\noBreak s2.\noPageBreak\break
   %{ 29 %} s2.\noBreak s2.\noBreak s2.\noPageBreak\break
-  %{ 32 %} s2.\noBreak s2.\noPageBreak\break
+  %{ 32 %} \grace { s8 } s2.\noBreak s2.\noPageBreak\break
   %{ 34 %} s2.\noBreak s2.\noPageBreak\break
   %{ 36 %} s2.\noBreak s2.\pageBreak
   

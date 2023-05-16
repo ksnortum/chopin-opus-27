@@ -24,7 +24,7 @@ rightHandUpper = \relative {
   \barNumberCheck 9
   fs4 e8. d16 cs4 bs) |
   R1 |
-  <cs cs'>4( gs'-> \tuplet 3/2 { fs8 gs fs } e8. ds16 |
+  \voiceOne cs'4( gs-> \oneVoice \tuplet 3/2 { fs8 gs fs } e8. ds16 |
   cs2 ds |
   e8. fs16 gs4 fs d-> |
   cs2 gs4) gs'( |
@@ -44,11 +44,11 @@ rightHandUpper = \relative {
   
   \barNumberCheck 25
   fs4 e8. d16 cs4 bs~ |
-  bs2) r2 |
+  bs2) d2\rest |
   s1 * 2 |
   \tempo "Più mosso" 2. = 54
   \time 3/4
-  <gs, gs'>4.->(^\ten q8 q4 |
+  <gs,, gs'>4.->(^\ten q8 q4 |
   <gs gs'>2.*2/3->^\ten \stemDown \hideNotes cs4) \unHideNotes \stemUp |
   <gs gs'>4.->(^\ten q8 q4 |
   <gs gs'>2.*2/3->^\ten \stemDown \hideNotes cs4) \unHideNotes \stemUp |
@@ -84,7 +84,7 @@ rightHandUpper = \relative {
   c'4.->(^\ritenuto bf8 df8. c16 |
   <c, af'>2.) |
   bff'4.->(^\agitato bff8 bff4 |
-  bff4.-> af8 ef4)^\accelerando |
+  bff4.-> af8 ef4) |
   cf'4.->( cf8 cf4 |
   cf4.-> bf8 ef4) |
   
@@ -102,20 +102,21 @@ rightHandUpper = \relative {
   \barNumberCheck 65
   <f df' f>4^\conAnima <f df'> \stemUp <f af> |
   bf2.)^\ten |
-  af8(\prall g af-.[ bf-. c-. df-.] |
+  af8( g af-.[ bf-. c-. df-.] |
   d4-. ef-. e-.) |
   f4->( df af |
   bf2.)^\ten |
-  af8(\prall g af-.[ bf-. c-. df-.] |
+  af8( g af-.[ bf-. c-. df-.] |
   b4 c d |
   
   \barNumberCheck 73
   e c g |
   a2.)^\ten |
-  g8(\prall fs g[-. a-. b-. c-.] |
+  \accidentalAbovePrall
+  g!8(\prall \accidentalAbovePrallOff fs g[-. a-. b-. c-.] |
   cs4-. d-. ds-. |
   e4 c g) |
-  d'4(^\accelerando ef f |
+  d'4( ef f |
   \tag midi { \tempo 2. = 56 }
   gf4 ef bff |
   \tag midi { \tempo 2. = 58 }
@@ -125,11 +126,11 @@ rightHandUpper = \relative {
   \barNumberCheck 81
   \key cs \minor
   \tag midi { \tempo 2. = 60 }
-  <bs a'>4 <a bs a'> q |
+  <bs a'!>4 <a bs a'> q |
   \tag midi { \tempo 2. = 62 }
   <a bs a'>4 q <a cs a'> |
   \tag midi { \tempo 2. = 64 }
-  <a a'>2 <gs fs' gs>4) \noBarSpan \fermataOverBar |
+  <a a'>2 \moveRightA <gs fs' gs>4) \noBarSpan \fermataOverBar |
   \cadenzaOn s2. s2 s1 s2. s2. s1 \cadenzaOff
   \bar "||"
   \time 4/4
@@ -172,12 +173,14 @@ rightHandLower = \relative {
   s1 * 8 |
   
   \barNumberCheck 9
-  s1 * 8
+  s1 * 2
+  cs''4 s2.
+  s1 * 5
   
   \barNumberCheck 17
   s1 * 3 |
   \voiceTwo
-  b'4 cs8. b16 b4 a8. gs16 |
+  b4 cs8. b16 b4 a8. gs16 |
   fs1 |
   e4 r \tuplet 5/4 { a16^.^( b^. a^. gs^. a^.) } b8. fs16 |
   gs1 |
@@ -291,7 +294,7 @@ rightHand = <<
 leftHandUpper = \relative {
   \voiceThree
   \omit TupletBracket
-  \tuplet 6/4 2 { cs,8[ gs' gs' cs, gs cs,]  gs'[ cs gs' cs, gs cs,] } |
+  \tuplet 6/4 2 { cs,8[_\legato gs' gs' cs, gs cs,] gs'[ cs gs' cs, gs cs,] } |
   \scaleDurations 2/3 {
     gs'8[ cs gs' cs, gs cs,]  gs'[ cs gs' cs, gs cs,] |
     gs'8[ cs gs' cs, gs cs,]  gs'[ cs b' cs, gs cs,] |
@@ -306,8 +309,8 @@ leftHandUpper = \relative {
     a'8[ d a' d, a cs,]  a'[ d a' d, a cs,] |
     gs'8[ e' cs' e, gs, cs,]  cs[ gs' bs' fs gs, cs,] |
     cs8[ gs' cs' e, gs, cs,]  cs[ gs' bs' fs gs, cs,] |
-    cs8[ gs' cs' e, gs,-5 cs,-3]  gs[ gs'-1 bs' fs gs, gs,] |
-    cs8-3[ gs'-1 cs' e, gs, cs,]  cs[ gs' bs' fs gs, cs,] |
+    cs8[ gs' cs' e, gs, cs,]  gs[ gs' bs' fs gs, gs,] |
+    cs8[ gs' cs' e, gs, cs,]  cs[ gs' bs' fs gs, cs,] |
     cs8[ gs' cs' e, gs, cs,]  cs[ gs' bs' fs gs, cs,] |
     cs8[ gs' cs' e, gs, cs,]  gs[ gs' bs' fs gs, gs,] |
     
@@ -357,7 +360,7 @@ leftHandUpper = \relative {
     \stemDown
     b8-. b'( gs e' b gs' e b gs) |
     b,,8-. b'( fs' b fs ds' b fs b,) |
-    e,8( e' b) e,( gs' b,) e,( b'' b,) |
+    e,8-\slurShapeGG ( e' b) e,-\slurShapeHH ( gs' b,) e,( b'' b,) |
     
     \barNumberCheck 49
     \key af \major
@@ -409,7 +412,7 @@ leftHandUpper = \relative {
   
   \barNumberCheck 81
   \key cs \minor
-  <ds fs>4 q q |
+  <ds! fs!>4 q q |
   <ds fs>4 q <cs fs> |
   <bs fs'>2.-> \once \hide Staff.BarLine |
   \cadenzaOn
@@ -446,7 +449,7 @@ leftHandUpper = \relative {
     cs8[ gs' as' cs, gs cs,]  cs[ gs' gs' bs, gs cs,] |
     cs8[ gs' gs' cs, gs cs,]  gs'[ cs gs' cs, gs cs,] |
     fs8[ cs' cs' fs, cs fs,]  fs,[ cs'' cs' fs, cs fs,] |
-    cs,_.[( cs'_.\< gs'_. cs_. gs'_. cs_.])\!
+    cs,_.[(-\moveFzF \fz cs'_.\< gs'_. cs_. gs'_. cs_.])\!
   }
   s4 <es, gs>~ |
   <es gs>1 |
@@ -512,7 +515,7 @@ leftHandLower = \relative {
   \barNumberCheck 97
   s1 * 3 |
   \stemDown
-  s2. <gs' cs>4~( |
+  s2. <gs' cs>4~-\slurShapeII ( |
   <cs, gs' cs>1)\fermata |
 }
 
@@ -551,7 +554,8 @@ dynamics = {
   s1 |
   s2. s8. s16\! |
   \time 3/4
-  s2. * 4 |
+  s2.\p |
+  s2. * 3 |
   
   \barNumberCheck 33
   \set crescendoText = \markup \large "poco a poco cresc."
@@ -575,7 +579,8 @@ dynamics = {
   s2 s8.\> s16\! |
   s2\> s8. s16\! |
   s2.^\sottoVoce |
-  \set crescendoText = \markup \large \whiteout "poco a poco cresc."
+  \set crescendoText = \markup \large \whiteout \pad-markup #0.5 
+    "poco a poco cresc. ed accelerando"
   \set crescendoSpanner = #'text
   s2 s4\< |
   s2. * 2 |
@@ -603,11 +608,15 @@ dynamics = {
   s2\< s8. s16\! |
   s2. |
   s2\> s8 s\! |
-  s2.\cresc |
+  \set crescendoText = \markup \large \whiteout \pad-markup #0.5 
+    "cresc. ed accelerando"
+  \set crescendoSpanner = #'text
+  s2.\< |
   s2. |
   s2 s8 s\! |
   
   \barNumberCheck 81
+  \set crescendoSpanner = #'hairpin
   s2.\fff\< |
   s2 s8 s\! |
   s2. |
@@ -645,8 +654,8 @@ pedal = {
   s4.\sustainOn s16 s\sustainOff s4.\sustainOn s16 s\sustainOff |
   
   \barNumberCheck 17
-  s2\sustainOn s4\sustainOff\sustainOn s4\sustainOff\sustainOn
-  s1\sustainOff\sustainOn |
+  s2\sustainOn s4\sustainOff\sustainOn s8.\sustainOff\sustainOn s16\sustainOff
+  s1\sustainOn |
   s2. s8. s16\sustainOff |
   \repeat unfold 5 { s2\sustainOn s4.\sustainOff\sustainOn s16 s\sustainOff | }
   
