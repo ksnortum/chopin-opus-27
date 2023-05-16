@@ -483,60 +483,61 @@ pedal = {
   s2. * 2 | 
   \moveSustainEOn
   s4. s4 s16 s\sustainOff |
-  s4.-\tweak X-offset -4 \sustainOn s4. |
-  s4.\sustainOff\sustainOn s4 s16 s\sustainOff |
+  s4.-\tweak X-offset -4 \sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4 s16 s\sustainOff |
   \moveSustainOff
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
   
   \barNumberCheck 9
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s32 s64 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
   
   \barNumberCheck 17
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s\sustainOff\sustainOn | 
-  s4\sustainOff\sustainOn s16 s\sustainOff % half measure
-  s4.\sustainOn |
-  s4.\sustainOff\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s8\sustainOff\sustainOn s4\sustainOff\sustainOn 
-  s4.\sustainOff\sustainOn s\sustainOff\sustainOn |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4\sustainOn s16 s\sustainOff % half measure
+  s4\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16. s32\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s8\sustainOff\sustainOn s8.\sustainOff\sustainOn 
+    s16\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
     
   \barNumberCheck 25
-  s8.\sustainOff\sustainOn s\sustainOff s4\sustainOn s16 s\sustainOff |
+  s8.\sustainOn s\sustainOff s4\sustainOn s16 s\sustainOff |
   s2.\sustainOn |
   s2. |
   s4. s4 s16 s\sustainOff |
-  s4.\sustainOn s |
-  s4.\sustainOff\sustainOn s |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s32 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
+  s4.\sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16. s32\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
   
   \barNumberCheck 33
-  s4.\sustainOff\sustainOn s4 s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4 s16 s32 s64 s\sustainOff |
-  s4.\sustainOn s |
+  s4.\sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16.. s64\sustainOff |
+  s4.\sustainOn s4 s16.. s64\sustainOff |
+  s4.\sustainOn s4 s16 s\sustainOff |
   
   \barNumberCheck 41
-  s4.\sustainOff\sustainOn \once \override SustainPedal.X-offset = -5
+  s4.\sustainOn \once \override SustainPedal.X-offset = -5
     s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s |
-  s4.\sustainOff\sustainOn s4 s16 s32 s\sustainOff |
+  s4.\sustainOn s4 s16. s32\sustainOff |
+  s4.\sustainOn s4 s16. s32\sustainOff |
   s4.\sustainOn s4\sustainOff\sustainOn s8\sustainOff\sustainOn |
-  s8 s4\sustainOff\sustainOn s4 s16 s32 s\sustainOff |
+  s8 s4\sustainOff\sustainOn s4 s16. s32\sustainOff |
   s2.\sustainOn |
   s2. | 
   s4. s4 s16 s\sustainOff |
@@ -554,7 +555,7 @@ pedal = {
   
   \barNumberCheck 57
   \tag layout {
-    s4. s4\sustainOn s16 s\sustainOff |
+    s4. s4\sustainOn s16. s32\sustainOff |
     s2. |
   }
   \tag midi {
@@ -566,22 +567,22 @@ pedal = {
   \moveSustainOff
   s2.\sustainOn
   s4. s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
   
   \barNumberCheck 65
-  s4.\sustainOn s |
-  s4.\sustainOff\sustainOn s\sustainOff\sustainOn |
-  s4.\sustainOff\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
-  s4.\sustainOn s\sustainOff\sustainOn |
-  s4\sustainOff\sustainOn s16 s\sustainOff s4. |
   s4.\sustainOn s4 s16 s\sustainOff |
-  s4.\sustainOn s |
-  s4.\sustainOff\sustainOn s |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4.\sustainOn s4\sustainOff\sustainOn s16 s\sustainOff |
+  s4\sustainOn s16 s\sustainOff s4. |
+  s4.\sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4 s16 s\sustainOff |
   
   \barNumberCheck 73
-  s4.\sustainOff\sustainOn s4 s16 s\sustainOff |
+  s4.\sustainOn s4 s16 s\sustainOff |
   s2.\sustainOn |
   s2. * 2 |
 }
