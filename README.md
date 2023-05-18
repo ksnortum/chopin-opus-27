@@ -13,6 +13,9 @@ This should produce a PDF and two MIDI files.
 
 The PDF produced will have point-and-click info in it, which you may not want (it makes the file size much bigger).  To avoid this use the `-dno-point-and-click` command line option, or uncomment `\pointAndClickOff` in the file `two-nocturnes-op27-book.ly`.  Command line options are explained in detail [here](https://lilypond.org/doc/v2.24/Documentation/usage/command_002dline-usage).
 
+## Thanks
+Thanks to [phmcarty](https://github.com/phmccarty) for the proofreading.
+
 ## Licensing
 This work is licensed under CC BY-SA 4.0. To view a copy of this license, visit [http://creativecommons.org/licenses/by-sa/4.0/](http://creativecommons.org/licenses/by-sa/4.0/).
 
