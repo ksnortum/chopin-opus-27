@@ -131,7 +131,7 @@ rightHandUpper = \relative {
   <a bs a'>4 q <a cs a'> |
   \tag midi { \tempo 2. = 64 }
   <a a'>2 \moveRightA <gs fs' gs>4) \noBarSpan \fermataOverBar |
-  \cadenzaOn s2. s2 s1 s2. s2. s1 \cadenzaOff
+  \cadenzaOn s2. s2 s1 s2. s8 s2. s1 \cadenzaOff
   \bar "||"
   \time 4/4
   \tag layout { \tempo "Tempo I" }
@@ -261,7 +261,7 @@ rightHandLower = \relative {
   s2. * 2 |
   \voiceFour
   e4 ds2 |
-  \cadenzaOn s2. s2 s1 s2. s2. s1 \cadenzaOff
+  \cadenzaOn s2. s2 s1 s2. s8 s2. s1 \cadenzaOff
   \time 4/4
   \grace { s8 }
   s1 * 5 |
@@ -418,7 +418,7 @@ leftHandUpper = \relative {
   \cadenzaOn
   \magnifyMusic 0.63 {
     <bs, bs'>4(_\conForza <cs cs'> <css css'> <e e'>4. <ds ds'>8 \stemUp
-    <cs cs'>8[ <bs bs'> <a a'> <fss fss'> <gs gs'> <b b'>_. <a a'>_. <gs gs'>_.
+    <cs cs'>8[ <bs bs'> <a a'> <gs gs'> <fss fss'> <gs gs'> <b b'>_. <a a'>_. <gs gs'>_.
     <fs fs'>_. <e e'>_. <ds ds'>_. <cs cs'>_. <bs bs'>_. <ds ds'>_.)]
     <a a'>2->_( <gs gs'>4) <fss fss'>_( <gs gs'>) 
     \tupletDown \tuplet 3/2 { <ds ds'>4_( <fs fs'>4. 
@@ -504,7 +504,7 @@ leftHandLower = \relative {
   
   \barNumberCheck 81
   s2. * 3 |
-  \cadenzaOn s2. s2 s1 s2. s2. s1 \cadenzaOff
+  \cadenzaOn s2. s2 s1 s2. s8 s2. s1 \cadenzaOff
   \time 4/4
   \grace { s8 }
   s1 * 5 |
@@ -620,7 +620,7 @@ dynamics = {
   s2.\fff\< |
   s2 s8 s\! |
   s2. |
-  \cadenzaOn s2\< s4\! s4.\> s8\! s1 s2. s2. s1 \cadenzaOff
+  \cadenzaOn s2\< s4\! s4.\> s8\! s1 s2. s8 s2. s1 \cadenzaOff
   s4.\<^\sottoVoce s16 s\! s4.\> s16 s\! |
   \tag layout { s1 } \tag midi { s1\p } |
   s1 * 3 |
@@ -706,7 +706,7 @@ pedal = {
   
   \barNumberCheck 81
   s2. * 3 |
-  \cadenzaOn s2. s2 s1 s2. s2. s1 \cadenzaOff
+  \cadenzaOn s2. s2 s1 s2. s8 s2. s1 \cadenzaOff
   s1\sustainOn |
   s2. s8. s16-\movePedalA\sustainOff |
   \repeat unfold 3 { s2\sustainOn s4.\sustainOff\sustainOn s16 s\sustainOff | }
@@ -757,7 +757,7 @@ forceBreaks = {
   
   %{ 71 %} \repeat unfold 5 { s2.\noBreak } s2.\noPageBreak\break
   %{ 77 %} \repeat unfold 5 { s2.\noBreak } s2.\noPageBreak\break
-  %{ 83 %} s2. \cadenzaOn s2. s2 s1 s2. s2. s1 \cadenzaOff
+  %{ 83 %} s2. \cadenzaOn s2. s2 s1 s2. s8 s2. s1 \cadenzaOff
            \noPageBreak\break
            \time 4/4
   %{ 84 %} \grace { s8 } s1\noBreak s1\noPageBreak\break
